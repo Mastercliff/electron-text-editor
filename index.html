@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header-block">
+            <div id="text-option-block">
+                <button class="button-class1" onclick="setUpper()">A</button>
+                <button class="button-class1" onclick="setLower()">a</button>
+            </div>
+            <input id="file-name" type="text" value="File Name">
+            <div id="file-option-block">
+                <button class="button-class2" onclick="openFile()">OPEN</button>
+                <button class="button-class2" onclick="saveFile()">SAVE</button>
+                <button class="button-class2" onclick="saveIn()">SAVE IN</button>
+            </div>
+        </div>
+        <hr>
+        <div id="text-box">
+            <textarea id="main-text-area"></textarea>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>
