@@ -2,7 +2,7 @@
 
 Just a text editor for funny
 
-![image](./s.png)
+![image](./img.png)
 
 ## Supported Platforms
 

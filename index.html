@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Text Editor</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/icons/css/all.css">
+    <link href="./css/icons/css/solid.css" rel="stylesheet">
 </head>
 <body>
+    
     <div id="main">
+        <header>
+            <div id="no-drag-div">
+                <button class="os-options-buttons" onclick="miniMize()"><i class="far fa-minus-square"></i></button>
+                <button class="os-options-buttons" onclick="maxMize()"><i class="far fa-square"></i></button>
+                <button class="os-options-buttons" onclick="exitApp()"><i class="far fa-times-circle"></i></button>
+            </div>
+        </header>
         <div id="header-block">
             <div id="text-option-block">
                 <button class="button-class1" onclick="setUpper()">A</button>

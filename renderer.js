@@ -1,4 +1,5 @@
 const { dialog } = require('electron').remote;
+const {remote}  = require('electron');
 const fs = require('fs');
 const os = require('os');
 
@@ -114,3 +115,16 @@ function get_music_name(path_name){
     }
   
   }
+
+function miniMize(){
+    remote.BrowserWindow.getFocusedWindow().minimize();
+}
+
+function maxMize(){
+    let window = remote.BrowserWindow.getFocusedWindow();
+    window.isMaximized() ? window.unmaximize() : window.maximize();
+}
+
+function exitApp(){
+    window.close();
+}
